@@ -6,7 +6,7 @@ public class Exercise8 {
             for (int i = 2; i < 100; i += 2) {
                 sum += i;
             }
-            System.out.println("Sum of even numbers less than 100: " + sum);
+            System.out.println("Sum of even numbers not greater than 100: " + sum);
         }
     }
 
