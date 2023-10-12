@@ -28,7 +28,20 @@ public class Employee extends Person {
     private String institution;
     private  String position;
     private  int  salary;
+    public Employee(){};
 
+//    public Employee(String FirstName, String lastName, int age, String institution, String position, int salary){
+//        this.age = age;
+//        this.FirstName = FirstName;
+//        this.lastName = lastName;
+//        this.institution = institution;
+//        this.position = position;
+//        this.salary = salary;
+//    }
+//
+    public void MyProfile(){
+        System.out.println( "I am" + this.FirstName +  "From " + this.institution);
+    }
     @Override
     public String toString() {
         return "Employee{" +

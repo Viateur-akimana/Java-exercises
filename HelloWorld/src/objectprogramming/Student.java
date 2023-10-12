@@ -6,7 +6,6 @@ public class Student extends Person {
     private String school;
     private String combination;
     private int grade;
-
     public String getSchool() {
         return school;
     }
