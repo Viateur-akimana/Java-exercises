@@ -1,31 +1,50 @@
 package com.viateur;
+// Base class (Parent class)
+class Person {
+    public  Person(){}
 
-public class Person {
-    private int age;
-    private String firstName;
+    public Person(String firstName, int age, String lastName) {
+        FirstName = firstName;
+        this.age = age;
+        this.lastName = lastName;
+    }
+
+    public String getFirstName() {
+        return FirstName;
+    }
+
+    public void setFirstName(String firstName) {
+        FirstName = firstName;
+    }
+
+    String FirstName;
+    int age;
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "FirstName='" + FirstName + '\'' +
+                ", age=" + age +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    String lastName;
 
     public int getAge() {
         return age;
     }
-    public  void setAge(int NewAge){
-        this.age= newAge;
-    }
-    public String getFirstName(){
-        return firstName;
-    }
-    public  void setFirstName(String firstName){
-        this.firstName = firstName;
-    }
-    public Person(){
-        this.age=0;
-    }
-    public Person( int a, String fname){
 
+    // Setter for age
+    public void setAge(int age) {
+        this.age = age;
     }
 }
-
-public  Person p = new Person();
-p.setAge= 40;
-p.getAge =
-
 
