@@ -7,7 +7,7 @@ public class Exercise18 {
         String temp = fname;
         fname = lname;
         lname= temp;
-        return fname + " " + lname;
+        return fname + lname;
     }
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
