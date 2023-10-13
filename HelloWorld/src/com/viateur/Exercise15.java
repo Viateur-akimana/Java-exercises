@@ -1,18 +1,22 @@
 package com.viateur;
 
-public class Exercise15 {
-    public static void main(String[] args){
-        int a = 5;
-        int b = 2;
-        int remainder = check();
+import java.util.Scanner;
 
+public class Exercise15 {
+    public static void checkDividend(int dividend, int divisor){
+        int answer = dividend / divisor;
+        int remainder = dividend % divisor;
+        System.out.println("Quontient:" + answer);
+        System.out.println("remainder:" + remainder);
     }
-    public static void check() {
-        public void makeQuontient(int a, int b) {
-            return a / b;
-        }
-        public void makeRemainder(int a, int b) {
-            return a % b;
-        }
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the dividend: ");
+        int dividend = scanner.nextInt();
+        System.out.print("Enter the divisor: ");
+        int divisor = scanner.nextInt();
+            checkDividend(dividend,divisor);
+
+
     }
 }
