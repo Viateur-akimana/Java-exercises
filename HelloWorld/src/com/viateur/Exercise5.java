@@ -1,28 +1,23 @@
 package com.viateur;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 public class Exercise5 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the length of the Christmas tree: ");
-        int length = scanner.nextInt();
-        for (int i = 1; i <= length; i++) {
-            for (int j = length - i; j > 0; j--) {
-                System.out.print(" ");
-            }
 
-            for (int j = 1; j <= 2 * i - 1; j++) {
-                System.out.print("*");
-            }
+   public static void main(String[] args){
+       Scanner scanner = new Scanner(System.in);
+       System.out.println("Enter the length of the christmas:");
+       int height = scanner.nextInt();
+       for(int i = 1; i <= height; i++){
 
-            System.out.println();
-        }
-
-        for (int i = 1; i <= 2; i++) {
-            for (int j = length - 1; j > 0; j--) {
-                System.out.print(" ");
-            }
-            System.out.println("| |");
-        }
-        scanner.close();
-    }
+           //for creating spaces
+         for(int space=1;space <= height-i; space++){
+               System.out.print(" ");
+           }
+         //for crearing stars
+          for(int star= 1; star <= i*2-1; star++){
+              System.out.print("*");
+          }
+           System.out.println();
+       }
+   }
 }

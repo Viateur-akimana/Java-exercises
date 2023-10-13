@@ -1,21 +1,21 @@
 package com.viateur;
 import java.util.Scanner;
 public class Exercise4 {
-        public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
-            String choice;
+       public static void main(String[] args) {
+           Scanner number = new Scanner(System.in);
+           String repeat;
+           do {
+               System.out.println("Enter the first number:-");
+               int firstNumber = number.nextInt();
+               System.out.println("Enter the second number:-");
+               int secondNumber = number.nextInt();
+               int sum = firstNumber + secondNumber;
+               System.out.println("The sum of entered numbers is:-" + sum);
+               System.out.print("Do you wish to terminate the program (Y/n)");
+               repeat = number.next();
 
-            do {
-                System.out.print("Enter the first number: ");
-                double num1 = scanner.nextDouble();
-                System.out.print("Enter the second number: ");
-                double num2 = scanner.nextDouble();
-                double sum = num1 + num2;
-                System.out.println("The sum of " + num1 + " and " + num2 + " is " + sum);
-                System.out.print("Do you want to perform the operation again? (yes/no): ");
-                choice = scanner.next();
-            } while (choice.equalsIgnoreCase("yes"));
-            scanner.close();
-        }
+           }
+           while (repeat.equals("Y"));
+       }
     }
 
