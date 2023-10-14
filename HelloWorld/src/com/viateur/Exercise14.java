@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 public class Exercise14 {
     public static double toFahrenheit(double celsius) {
-        return (celsius * 1.8) + 32;
+        final double PEOPLE= 1.8;
+        return (celsius * PEOPLE) + 32;
     }
 
     public static void main(String[] args) {
